@@ -1,6 +1,6 @@
 public class MyFirstGame {
 	public static void main(String[] args) {
-		int guess = 8;
+		int guessedNumber = 8;
 		int attempt = 30;
 
 		do {
