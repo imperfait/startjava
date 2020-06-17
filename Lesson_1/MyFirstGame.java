@@ -1,13 +1,18 @@
-public class MyFirstGame{
+public class MyFirstGame {
 	public static void main(String[] args) {
-		int numberCpu = 41;
-		int guess = 18;
-		if (guess > numberCpu){
-			System.out.println("Введенное вами число больше того, что загадал компьютер");
-		} else if(guess < numberCpu){
-			System.out.println("Введенное вами число меньше того, что загадал компьютер");
-		} else{
-			System.out.println("Вы угадали!");
-		};
+		int guess = 8;
+		int attempt = 30;
+
+		do {
+			if (attempt > guess) {
+				System.out.println("Введенное вами число больше того, что загадал компьютер");
+				attempt--;
+			} else if (attempt < guess) {
+				System.out.println("Введенное вами число меньше того, что загадал компьютер");
+				attempt++;
+			}
+		} while (attempt != guess);
+
+		System.out.println("Вы угадали!");
 	}
 }
