@@ -1,7 +1,7 @@
 public class Calculator {
 	public static void main(String[] args) {
-		int firstNum = 3;
-		int secondNum = 8;
+		int firstNum = 2;
+		int secondNum = 7;
 		char sign = '^';
 
 		if (sign == '+') {
@@ -17,9 +17,9 @@ public class Calculator {
 		} else {
 			int pow = 1;
 
-			for (int i = secondNum; i > 0; i--) {
-				pow *= firstNum;
-			}
+				for (int i = secondNum; i > 0; i--) {
+					pow *= firstNum;
+				}
 			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + pow);
 		}
 	}
