@@ -1,24 +1,26 @@
 public class Calculator {
 	public static void main(String[] args) {
-		int firstNum = 4;
-		int secondNum = 9;
-		int sum = firstNum;
-		char symbol = '%';
-		if (symbol == '+') {
-			System.out.println(firstNum + " " + symbol + " " + secondNum + " = " + (firstNum + secondNum));
-		} else if (symbol == '-') {
-			System.out.println(firstNum + " " + symbol + " " + secondNum + " = " + (firstNum - secondNum));
-		} else if (symbol == '/') {
-			System.out.println(firstNum + " " + symbol + " " + secondNum + " = " + (firstNum / secondNum));
-		} else if (symbol == '*') {
-			System.out.println(firstNum + " " + symbol + " " + secondNum + " = " + (firstNum * secondNum));
-		} else if (symbol == '%') {
-			System.out.println(firstNum + " " + symbol + " " + secondNum + " = " + (firstNum % secondNum));
+		int firstNum = 3;
+		int secondNum = 8;
+		char sign = '^';
+
+		if (sign == '+') {
+			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + (firstNum + secondNum));
+		} else if (sign == '-') {
+			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + (firstNum - secondNum));
+		} else if (sign == '/') {
+			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + (firstNum / secondNum));
+		} else if (sign == '*') {
+			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + (firstNum * secondNum));
+		} else if (sign == '%') {
+			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + (firstNum % secondNum));
 		} else {
-			for (int i = secondNum-1; i > 0; i--) {
-				sum *= firstNum;
+			int pow = 1;
+
+			for (int i = secondNum; i > 0; i--) {
+				pow *= firstNum;
 			}
-			System.out.println(firstNum+" " + symbol+ " "+secondNum+" = "+ sum);
+			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + pow);
 		}
 	}
 }

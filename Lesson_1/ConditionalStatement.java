@@ -1,7 +1,7 @@
-public class ConditionalStatement{
+public class ConditionalStatement {
 	public static void main(String[] args) {
 		short age = 21;
-		boolean woman = false;
+		boolean man = true;
 		float height = 1.9f;
 		char firstNameLetter = 'A';
 		
@@ -9,8 +9,12 @@ public class ConditionalStatement{
 			System.out.println("You are over 20");
 		}
 
-		if (!woman) {
+		if (man) {
 			System.out.println("You are man");
+		}
+
+		if (!man) {
+			System.out.println("You are woman");
 		}
 
 		if (height < 1.8) {
