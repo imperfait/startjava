@@ -15,11 +15,11 @@ public class Cycle {
 		int counter = 10;
 		int sumOdd = 0;
 		do {
-			if(counter % 2 == 1) {
+			if (counter % 2 == 1) {
 				sumOdd += counter;
 			}
 			counter++;
-		} while(counter <= 20);
+		} while (counter <= 20);
 		System.out.print(sumOdd);
 	}
 }
