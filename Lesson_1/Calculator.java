@@ -16,10 +16,9 @@ public class Calculator {
 			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + (firstNum % secondNum));
 		} else {
 			int pow = 1;
-
-				for (int i = secondNum; i > 0; i--) {
-					pow *= firstNum;
-				}
+			for (int i = secondNum; i > 0; i--) {
+				pow *= firstNum;
+			}
 			System.out.println(firstNum + " " + sign + " " + secondNum + " = " + pow);
 		}
 	}
